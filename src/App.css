@@ -14,6 +14,8 @@ body {
   padding: 0;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .App {
@@ -150,6 +152,7 @@ html {
 @media (max-width: 768px) {
   .container {
     padding: 0 16px;
+    max-width: 100%;
   }
   
   .section {
@@ -160,11 +163,17 @@ html {
     padding: 10px 24px;
     font-size: 14px;
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 }
 
 @media (max-width: 480px) {
   .container {
     padding: 0 12px;
+    max-width: 100%;
   }
   
   .section {
@@ -174,5 +183,11 @@ html {
   .btn {
     padding: 8px 20px;
     font-size: 13px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
 }

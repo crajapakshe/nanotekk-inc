@@ -5,6 +5,7 @@
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 80px 0 40px;
 }
 
 .hero-background {
@@ -55,6 +56,9 @@
   line-height: 1.2;
   margin-bottom: 24px;
   color: #1a1a1a;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .hero-description {
@@ -123,6 +127,11 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
+    min-height: auto;
+  }
+
   .hero .container {
     grid-template-columns: 1fr;
     gap: 48px;
@@ -131,11 +140,16 @@
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    padding: 0 8px;
   }
 
   .hero-description {
     font-size: 1.1rem;
+    padding: 0 8px;
+    margin-bottom: 32px;
   }
 
   .hero-buttons {
@@ -166,14 +180,21 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding: 90px 0 40px;
+  }
+
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.1;
+    margin-bottom: 16px;
+    padding: 0 4px;
   }
 
   .hero-description {
     font-size: 1rem;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+    padding: 0 4px;
   }
 
   .hero .container {
